@@ -5,4 +5,5 @@ export interface ICandidate {
     lastname: string;
     slogan: string;
     votes: number;
+    selectedCandidate?: Function;
 }

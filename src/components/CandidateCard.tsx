@@ -32,19 +32,20 @@ const useStyles = makeStyles({
   
 
 
-export const CandidateCard: React.FC<ICandidate> = ({id, slogan, age, votes, firstname, lastname}) => {
+export const CandidateCard: React.FC<ICandidate> = ({id, slogan, age, votes, firstname, lastname, selectedCandidate= () => {}}) => {
 
     const [candidate, setCandidate] = useState<ICandidate>({id, slogan, age, votes, firstname, lastname});
-    const [increaseVote,  { data: increaseData }] = useMutation(INCREATE_VOTES_CANDIDATE);
-    const [decrementVote, { data: decrementData }] = useMutation(DECREMENT_VOTES_CANDIDATE);
+    const [increaseVote] = useMutation(INCREATE_VOTES_CANDIDATE);
+    const [decrementVote] = useMutation(DECREMENT_VOTES_CANDIDATE);
     const [loading, setLoading] = useState(false);
 
     const classes = useStyles();
 
 
     const handleVoteUp = async () => {
-        setLoading(true);
         if(candidate.votes < 20){
+            selectedCandidate(`${firstname} ${lastname}`);
+            setLoading(true);
             setCandidate({
                 ...candidate, 
                 votes: candidate.votes + 1 
@@ -56,8 +57,9 @@ export const CandidateCard: React.FC<ICandidate> = ({id, slogan, age, votes, fir
     
 
     const handleVoteDown = async () => {
-        setLoading(true);
         if(candidate.votes > 0){
+            selectedCandidate(`${firstname} ${lastname}`);
+            setLoading(true);
             setCandidate({
                 ...candidate, 
                 votes: candidate.votes - 1 

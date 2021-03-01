@@ -1,46 +1,38 @@
-# Getting Started with Create React App
+![App](imgReadme/img1.PNG)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# VOTING APP - FRONTEND TF
 
-## Available Scripts
+This is a simple project developing using create-react-app and Typescript. 
 
-In the project directory, you can run:
+This app shows 20 candidates created by Backend project randomly. You can watch different attributes of them like: full name, age, slogan and number of votes. At Home page you can see the number of total votes, voting for someone up or down and look the last candidate you voted. At Order by Age page you can order candidates descencing or ascending depending on age. At Order by Votes page you can order candidates by number of votes. Each candidate is an adult and has upper or equal to 0 votes and lower or equal to 20 votes.
 
-### `npm start`
+Connection with backend is through Graphql. If you want to take a glimpse to this project, [visit it here.](https://github.com/luisVidal97/backend-voting-app).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Starting 🚀
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+If you you want to run the project locally, please clone this repository in one of your personal folders.
 
-### `npm test`
+```
+git clone https://github.com/luisVidal97/frontend-voting-app.git
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+And then, in the project root run the following to install all required dependences:
 
-### `npm run build`
+```
+npm install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+With the above, you could enjoy the project, explore different functionalities and do whatever you want.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Developing with 🛠️
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [React with Functional Components](https://es.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/) 
+- [Material UI](https://material-ui.com/es/getting-started/installation/)
+- [Apollo client](https://www.apollographql.com/docs/tutorial/introduction/)
 
-### `npm run eject`
+## Authors ✒️
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Luis Fernando Cruces** - luisfcv97@gmail.com
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+If you have any recomendation or something to contribute, please let me know sending a message! I will be very eager to receive it.
